@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lyra & Care Plus | Avatar</title>
+    <link rel="icon" type="image/x-icon" href="../public/LOGO-VETORIZADA.png" />
+    <link rel="stylesheet" href="../style/avatar.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="scroll-content">
+            <header class="app-header">
+                <h1>Avatar</h1>
+                <div class="header-actions">
+                    <div class="badge-points">
+                        <span>208</span>
+                        <span class="dot"></span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-dark)"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                            <path d="M8 14s1.5-2 4-2 4 2 4 2" />
+                            <line x1="9" y1="9" x2="9.01" y2="9" />
+                            <line x1="15" y1="9" x2="15.01" y2="9" />
+                        </svg>
+                    </div>
+                    <button class="btn-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <main>
+                <section class="section avatar-tabs-section">
+                    <h2 id="avatar-secoes-titulo" class="sr-only">Seções do avatar</h2>
+                    <nav class="avatar-tabs" aria-label="Navegação interna do avatar">
+                        <a href="#" class="tab-pill active" aria-current="page">Avatar</a>
+                        <a href="#" class="tab-pill">Vestiário</a>
+                        <a href="#" class="tab-pill">Objetivos</a>
+                        <a href="#" class="tab-pill">Comunidade</a>
+                    </nav>
+                </section>
+
+                <section class="section hero-section">
+                    <h2 id="avatar-hero-titulo" class="sr-only">Avatar principal</h2>
+
+                    <div class="avatar-stage">
+                        <p class="speech-bubble speech-bubble-left">Tá com fome?<br />Bora Almoçar</p>
+                        <p class="speech-bubble speech-bubble-right">Aoba meu fi,<br />Bora Treinar?</p>
+
+                        <figure class="avatar-figure">
+                            <div class="avatar-character">
+                                <img src="../public/avatar-lyra.png"
+                                    alt="Avatar virtual segurando uma garrafa e acenando" />
+                            </div>
+                            <figcaption class="sr-only">Avatar virtual central da página.</figcaption>
+                        </figure>
+
+                        <div class="avatar-shadow"></div>
+                    </div>
+                </section>
+
+                <section class="section status-section">
+
+                    <div class="status-grid">
+                        <article class="status-card">
+                            <div class="status-card-heading">
+                                <h3>Troféus</h3>
+                            </div>
+                            <div class="status-card-body card-green">
+                                <span class="status-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M8 21h8"></path>
+                                        <path d="M12 17v4"></path>
+                                        <path d="M7 4h10v4a5 5 0 0 1-10 0V4z"></path>
+                                        <path d="M17 6h2a2 2 0 0 1 0 4h-2"></path>
+                                        <path d="M7 6H5a2 2 0 0 0 0 4h2"></path>
+                                    </svg>
+                                </span>
+                                <strong>1045</strong>
+                            </div>
+                        </article>
+
+                        <article class="status-card">
+                            <div class="status-card-heading heading-right">
+                                <h3>Streak</h3>
+                            </div>
+                            <div class="status-card-body card-lime">
+                                <span class="status-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M13.5 2s.3 2.2-1.4 4.5c-1.2 1.7-3.1 2.9-4.2 4.8A7.8 7.8 0 0 0 7 15c0 4 2.8 7 6.8 7 3.9 0 7.2-2.9 7.2-7.1 0-5-3.4-8.1-7.5-12.9z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <strong>high</strong>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section chests-section">
+                    <div class="section-header">
+                        <h2 id="baus-titulo">Baús</h2>
+                    </div>
+
+                    <div class="chests-grid">
+                        <article class="chest-card unlocked featured">
+                            <div class="chest-shell">
+                                <div class="chest-illustration">
+                                    <span class="chest-lid"></span>
+                                    <span class="chest-base"></span>
+                                    <span class="chest-band"></span>
+                                    <span class="chest-lock"></span>
+                                </div>
+                            </div>
+                            <span class="chest-badge success">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12l4 4 10-10"></path>
+                                </svg>
+                            </span>
+                        </article>
+
+                        <article class="chest-card locked">
+                            <span class="lock-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+                                    <path d="M8 11V8a4 4 0 0 1 8 0v3"></path>
+                                </svg>
+                            </span>
+                            <div class="chest-shell chest-shell-light">
+                                <div class="chest-illustration">
+                                    <span class="chest-lid"></span>
+                                    <span class="chest-base"></span>
+                                    <span class="chest-band"></span>
+                                    <span class="chest-lock"></span>
+                                </div>
+                            </div>
+                            <span class="chest-badge sparkle"></span>
+                        </article>
+
+                        <article class="chest-card locked">
+                            <span class="lock-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+                                    <path d="M8 11V8a4 4 0 0 1 8 0v3"></path>
+                                </svg>
+                            </span>
+                            <div class="chest-shell chest-shell-light">
+                                <div class="chest-illustration">
+                                    <span class="chest-lid"></span>
+                                    <span class="chest-base"></span>
+                                    <span class="chest-band"></span>
+                                    <span class="chest-lock"></span>
+                                </div>
+                            </div>
+                            <span class="chest-badge sparkle"></span>
+                        </article>
+
+                        <article class="chest-card unlocked featured">
+                            <div class="chest-shell">
+                                <div class="chest-illustration">
+                                    <span class="chest-lid"></span>
+                                    <span class="chest-base"></span>
+                                    <span class="chest-band"></span>
+                                    <span class="chest-lock"></span>
+                                </div>
+                            </div>
+                            <span class="chest-badge success leaf"></span>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item" aria-label="Início">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"></path>
+                    <polyline points="9 21 9 12 15 12 15 21"></polyline>
+                </svg>
+                Início
+            </a>
+            <a href="./index.html" class="nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12s4.03 9 9 9"></path>
+                    <path d="M12 8v4l3 3"></path>
+                    <path d="M18 18l3 3m0-3l-3 3"></path>
+                </svg>
+                Resumo
+            </a>
+            <a href="#" class="nav-item active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"></path>
+                </svg>
+                Avatar
+            </a>
+            <a href="#" class="nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+                    <line x1="12" y1="12" x2="12" y2="16"></line>
+                    <line x1="10" y1="14" x2="14" y2="14"></line>
+                </svg>
+                Loja
+            </a>
+        </nav>
+    </div>
+</body>
+
+</html>

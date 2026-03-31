@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lyra & Care Plus</title>
+    <link rel="icon" type="image/x-icon" href="../public/LOGO-VETORIZADA.png">
+    <link rel="stylesheet" href="../style/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="scroll-content">
+            <header class="app-header">
+                <h1>Resumo</h1>
+                <div class="header-actions">
+                    <div class="badge-points">
+                        <span>208</span>
+                        <span class="dot"></span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-dark)"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+                            <path d="M8 14s1.5-2 4-2 4 2 4 2" />
+                            <line x1="9" y1="9" x2="9.01" y2="9" />
+                            <line x1="15" y1="9" x2="15.01" y2="9" />
+                        </svg>
+                    </div>
+                    <button class="btn-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                        </svg>
+                    </button>
+                </div>
+            </header>
+
+            <div class="name-bar" role="region">
+                <span>Nome</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                </svg>
+            </div>
+
+            <section class="section">
+                <div class="section-header">
+                    <h2 id="resumo-titulo">Resumo</h2>
+                    <a href="#" class="link-arrow">
+                        →
+                    </a>
+                </div>
+
+                <div class="summary-card">
+                    <figure class="ring-wrap">
+                        <svg viewBox="0 0 90 90">
+                            <circle class="ring-track" cx="45" cy="45" r="38" />
+                            <circle class="ring-sleep" cx="45" cy="45" r="38" />
+                            <circle class="ring-track" cx="45" cy="45" r="28" />
+                            <circle class="ring-steps" cx="45" cy="45" r="28" />
+                            <circle class="ring-track" cx="45" cy="45" r="18" />
+                            <circle class="ring-exercise" cx="45" cy="45" r="18" />
+                        </svg>
+                        <div class="ring-center"></div>
+                    </figure>
+
+                    <ul class="ring-legend">
+                        <li class="l-sleep">Sono</li>
+                        <li class="l-steps">Passos</li>
+                        <li class="l-exercise">Exercícios</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="stat-grid">
+
+                    <article class="stat-card">
+                        <div class="stat-card-header">
+                            <h3 id="alim-titulo">Alimentação</h3>
+                            <a href="#" class="link-arrow">→</a>
+                        </div>
+                        <p class="stat-label">Hoje</p>
+                        <p class="stat-value">1245<small style="font-size:.9rem">kcal</small></p>
+                        <button class="btn-pill" type="button" aria-label="Abrir câmera para registrar refeição">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                <circle cx="12" cy="13" r="4" />
+                            </svg>
+                            Camera
+                        </button>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card-header">
+                            <h3 id="sono-titulo">Sono</h3>
+                            <a href="#" class="link-arrow">→</a>
+                        </div>
+                        <p class="stat-label">Hoje</p>
+                        <p class="stat-value">5 <small style="font-size:.9rem">horas</small></p>
+                        <button class="btn-pill alert" type="button">Durma mais, fi!</button>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card-header">
+                            <h3 id="passos-titulo">Passos</h3>
+                            <a href="#" class="link-arrow">→</a>
+                        </div>
+                        <p class="stat-label">Hoje</p>
+                        <p class="stat-value">156</p>
+                        <p class="stat-sub">Distância</p>
+                        <p class="stat-value" style="font-size:1.25rem">1.2 km</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card-header">
+                            <h3 id="exerc-titulo">Exercícios</h3>
+                            <a href="#" class="link-arrow">→</a>
+                        </div>
+                        <p class="stat-label">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                                style="vertical-align:middle;margin-right:3px">
+                                <path d="M6 5v14M18 5v14" />
+                                <rect x="1" y="8" width="5" height="8" rx="1" />
+                                <rect x="18" y="8" width="5" height="8" rx="1" />
+                                <line x1="6" y1="12" x2="18" y2="12" />
+                            </svg>
+                        </p>
+                        <p class="stat-sub">Treino Tradicional</p>
+                        <p class="stat-value">200<small style="font-size:.9rem">CAL</small></p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="banner">
+                    <div class="banner-content">
+                        <h2>Care Plus: um conselho para viver melhor</h2>
+                        <p>Lembre-se que agora é um presente.</p>
+                        <button class="btn-outline-white" type="button">Conheça a campanha</button>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="active"></span>
+                        <span role="tab" aria-selected="false" aria-label="Slide 2"></span>
+                        <span role="tab" aria-selected="false" aria-label="Slide 3"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-header">
+                    <h2 id="dicas-titulo">Dicas</h2>
+                    <a href="#" class="link-arrow" aria-label="Ver todas as dicas">→</a>
+                </div>
+
+                <div class="tips-scroll">
+                    <article class="tip-card">
+                        <h4>Dicas de Sono</h4>
+                        <p>Para uma vida plena, dormir bem é fundamental para restaurar sua mente...</p>
+                    </article>
+                    <article class="tip-card">
+                        <h4>Dicas de Treino</h4>
+                        <p>Para que seus treinos tenham o máximo de resultado, dormir bem é crucial...</p>
+                    </article>
+                    <article class="tip-card">
+                        <h4>Dicas de Saúde</h4>
+                        <p>Pequenos hábitos diários fazem toda a diferença para a sua qualidade de vida...</p>
+                    </article>
+                </div>
+            </section>
+
+            <p class="tip-paragraph">
+                Dormir bem restaura sua energia, praticar exercícios fortalece seu corpo e mente, e realizar seu exame
+                na Care Plus é essencial para o monitoramento preventivo e completo da sua saúde.
+            </p>
+
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item" aria-label="Início">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                    <polyline points="9 21 9 12 15 12 15 21" />
+                </svg>
+                Início
+            </a>
+            <a href="#" class="nav-item active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12s4.03 9 9 9" />
+                    <path d="M12 8v4l3 3" />
+                    <path d="M18 18l3 3m0-3l-3 3" />
+                </svg>
+                Resumo
+            </a>
+            <a href="../page/avatar.html" class="nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+                Avatar
+            </a>
+            <a href="#" class="nav-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                    <line x1="12" y1="12" x2="12" y2="16" />
+                    <line x1="10" y1="14" x2="14" y2="14" />
+                </svg>
+                Loja
+            </a>
+        </nav>
+
+    </div>
+
+</body>
+
+</html>
