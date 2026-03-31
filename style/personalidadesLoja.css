@@ -1,0 +1,374 @@
+/* ============================================
+   ESTILOS - PÁGINA DE PERSONALIDADES
+   ============================================ */
+
+/* Container do Botão de Voltar */
+.back-button-container {
+    padding: 0 16px 12px;
+    margin-bottom: 8px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--green-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.back-button:active {
+    opacity: 0.7;
+    transform: translateX(-2px);
+}
+
+.back-button svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--green-dark);
+}
+
+/* Container do Título da Seção */
+.section-title-container {
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--green-light);
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(26, 122, 74, 0.1);
+}
+
+/* Seção de Personalidades */
+.personalities-section {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+/* Lista de Personalidades */
+.personalities-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Item da Lista */
+.personality-item {
+    background: var(--white);
+    border-radius: var(--radius-card);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.personality-item:active {
+    transform: scale(0.98);
+    box-shadow: var(--shadow-card);
+}
+
+/* Conteúdo Principal do Item */
+.personality-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Imagem da Personalidade */
+.personality-image {
+    flex: 0 0 auto;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green-pale);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.personality-image svg {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05));
+}
+
+.personality-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 4px;
+}
+
+/* Informações da Personalidade */
+.personality-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+}
+
+.personality-name {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.personality-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Ação (Preço + Botão) */
+.personality-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 0 0 auto;
+}
+
+.personality-price {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--green-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.personality-price span {
+    font-size: 0.95rem;
+    color: #ffd700;
+    font-weight: 900;
+}
+
+/* Botão de Compra */
+.btn-buy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: var(--green-mid);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 8px 14px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    font-family: var(--font);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-buy:active {
+    background: var(--green-dark);
+    transform: scale(0.95);
+}
+
+.btn-buy:disabled {
+    background: var(--text-label);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Animação de Entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.personality-item {
+    animation: fadeInUp 0.3s ease forwards;
+}
+
+.personality-item:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.personality-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.personality-item:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.personality-item:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.personality-item:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+/* Responsividade */
+@media (min-width: 500px) {
+    .back-button-container {
+        padding: 0 20px 16px;
+        margin-bottom: 12px;
+    }
+
+    .back-button {
+        font-size: 0.95rem;
+    }
+
+    .section-title-container {
+        padding: 16px 20px;
+        margin-bottom: 12px;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .personalities-section {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .personalities-list {
+        gap: 14px;
+    }
+
+    .personality-item {
+        padding: 14px;
+        border-radius: 20px;
+    }
+
+    .personality-content {
+        gap: 14px;
+    }
+
+    .personality-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 14px;
+    }
+
+    .personality-image svg {
+        width: 90px;
+        height: 90px;
+    }
+
+    .personality-name {
+        font-size: 1rem;
+    }
+
+    .personality-label {
+        font-size: 0.8rem;
+    }
+
+    .personality-action {
+        gap: 8px;
+    }
+
+    .personality-price {
+        font-size: 0.9rem;
+    }
+
+    .btn-buy {
+        padding: 10px 16px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Estados Interativos */
+.personality-item:focus-visible {
+    outline: 2px solid var(--green-dark);
+    outline-offset: 2px;
+}
+
+.btn-buy:focus-visible {
+    outline: 2px solid var(--green-dark);
+    outline-offset: 2px;
+}
+
+/* Modo Escuro */
+@media (prefers-color-scheme: dark) {
+    .personality-item {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .personality-image {
+        background: rgba(45, 181, 110, 0.15);
+    }
+
+    .personality-name {
+        color: var(--teal);
+    }
+
+    .personality-label {
+        color: var(--text-muted);
+    }
+
+    .personality-price {
+        color: var(--teal);
+    }
+
+    .section-title {
+        color: rgba(232, 248, 239, 0.8);
+    }
+}
+
+/* Acessibilidade - Reduzir Movimento */
+@media (prefers-reduced-motion: reduce) {
+    .personality-item,
+    .back-button,
+    .btn-buy {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Suporte a Hover em Dispositivos com Mouse */
+@media (hover: hover) {
+    .personality-item:hover {
+        box-shadow: var(--shadow-card);
+        transform: translateY(-2px);
+    }
+
+    .btn-buy:hover {
+        background: var(--green-dark);
+        transform: scale(1.05);
+    }
+
+    .back-button:hover {
+        opacity: 0.8;
+        transform: translateX(-3px);
+    }
+}
