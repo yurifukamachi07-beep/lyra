@@ -457,7 +457,7 @@ body {
     padding: 10px 4px 12px;
     gap: 3px;
     text-decoration: none;
-    color: var(--text-label);
+    color:#4b4f52;
     font-size: .72rem;
     font-weight: 700;
     border: none;
