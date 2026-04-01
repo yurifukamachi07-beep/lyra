@@ -1,8 +1,13 @@
-/* ============================================
-   ESTILOS ESPECÍFICOS DA PÁGINA LOJA
-   ============================================ */
+.shop-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
 
-/* Grid de Produtos da Loja */
+.shop-card-link .shop-card {
+    cursor: pointer;
+}
+
 .shop-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,7 +16,6 @@
     margin-bottom: 16px;
 }
 
-/* Card Principal da Loja (Destaque) */
 .shop-card-featured {
     grid-column: 1 / -1;
     background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-dark) 100%);
@@ -86,7 +90,6 @@
     color: #ffd700;
 }
 
-/* Card Secundário da Loja */
 .shop-card-secondary {
     background: var(--green-light);
     border-radius: var(--radius-card);
@@ -141,8 +144,6 @@
     line-height: 1.4;
     margin: 0;
 }
-
-/* Variação de Cards em Grade 2x2 */
 .shop-grid-secondary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,7 +156,6 @@
     margin: 0;
 }
 
-/* Card Compacto para Itens Menores */
 .shop-card-compact {
     background: var(--white);
     border-radius: var(--radius-card);
@@ -203,7 +203,6 @@
     color: var(--green-dark);
 }
 
-/* Botão de Compra/Ação */
 .btn-shop {
     display: inline-flex;
     align-items: center;
@@ -239,7 +238,6 @@
     height: 16px;
 }
 
-/* Badge de Desconto */
 .badge-discount {
     position: absolute;
     top: 8px;
@@ -253,7 +251,6 @@
     z-index: 2;
 }
 
-/* Badge de Novo */
 .badge-new {
     position: absolute;
     top: 8px;
@@ -267,7 +264,6 @@
     z-index: 2;
 }
 
-/* Seção de Filtros/Categorias */
 .shop-filters {
     display: flex;
     gap: 8px;
@@ -303,7 +299,6 @@
     border-color: var(--green-dark);
 }
 
-/* Seção de Moeda/Pontos */
 .currency-display {
     display: flex;
     align-items: center;
@@ -323,7 +318,6 @@
     color: #ffd700;
 }
 
-/* Animação de Carregamento */
 .shop-card.loading {
     opacity: 0.6;
     pointer-events: none;
@@ -346,7 +340,6 @@
     }
 }
 
-/* Responsividade */
 @media (min-width: 500px) {
     .shop-grid {
         grid-template-columns: 1fr 1fr;
@@ -402,7 +395,6 @@
     }
 }
 
-/* Modo Escuro (Opcional) */
 @media (prefers-color-scheme: dark) {
     .shop-card-secondary {
         background: rgba(45, 181, 110, 0.15);

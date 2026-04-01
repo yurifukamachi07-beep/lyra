@@ -1,8 +1,3 @@
-/* ============================================
-   ESTILOS - PÁGINA DE DETALHES DA CATEGORIA
-   ============================================ */
-
-/* Container do Botão de Voltar */
 .back-button-container {
     padding: 0 16px 12px;
     margin-bottom: 8px;
@@ -30,7 +25,6 @@
     stroke: var(--green-dark);
 }
 
-/* Seção de Categoria */
 .category-section {
     padding: 0 16px;
     margin-bottom: 20px;
@@ -46,26 +40,24 @@
     text-align: center;
 }
 
-/* Container do Carrossel */
 .carousel-container {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-/* Scroll do Carrossel (Horizontal) */
 .carousel-scroll {
     display: flex;
     gap: 12px;
-    overflow-x: scroll; /* Forçar scroll horizontal */
+    overflow-x: scroll;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    padding: 0 16px 12px; /* Padding nas laterais para o primeiro e último item não colarem */
-    margin: 0 -16px; /* Compensar o padding da seção para o scroll ir até o limite da tela */
-    scrollbar-width: none; /* Esconder no Firefox */
+    padding: 0 16px 12px;
+    margin: 0 -16px;
+    scrollbar-width: none;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Scroll suave no iOS */
-    cursor: grab; /* Mudar o cursor para indicar que pode "agarrar" e arrastar */
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
 }
 
 .carousel-scroll:active {
@@ -76,10 +68,9 @@
     display: none;
 }
 
-/* Item do Carrossel */
 .carousel-item {
-    flex: 0 0 160px; /* Largura fixa para garantir que o "corte" na direita aconteça corretamente */
-    scroll-snap-align: center; /* Centralizar o item no scroll para melhor visualização */
+    flex: 0 0 160px;
+    scroll-snap-align: center;
     scroll-snap-stop: always;
     animation: fadeInSlide 0.4s ease forwards;
 }
@@ -111,7 +102,6 @@
     }
 }
 
-/* Card do Item */
 .item-card {
     background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-dark) 100%);
     border-radius: var(--radius-card);
@@ -146,7 +136,6 @@
     opacity: 1;
 }
 
-/* Seletor de Cores */
 .item-colors {
     display: flex;
     gap: 6px;
@@ -175,7 +164,6 @@
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
-/* Imagem do Item */
 .item-image {
     flex: 1;
     display: flex;
@@ -201,7 +189,6 @@
     padding: 8px;
 }
 
-/* Informações do Item */
 .item-info {
     display: flex;
     flex-direction: column;
@@ -235,12 +222,10 @@
     font-weight: 900;
 }
 
-/* Variação para Skins (com nome) */
 .carousel-item:has(.item-name) .item-card {
     min-height: 220px;
 }
 
-/* Responsividade */
 @media (min-width: 500px) {
     .back-button-container {
         padding: 0 20px 16px;
@@ -308,7 +293,6 @@
     }
 }
 
-/* Indicador de Scroll (Opcional) */
 .carousel-scroll::after {
     content: '';
     position: absolute;
@@ -320,7 +304,6 @@
     pointer-events: none;
 }
 
-/* Animação de Carregamento */
 .carousel-item.loading .item-card {
     opacity: 0.6;
     pointer-events: none;
@@ -343,13 +326,11 @@
     }
 }
 
-/* Estados Interativos */
 .item-card:focus-visible {
     outline: 2px solid var(--white);
     outline-offset: 2px;
 }
 
-/* Modo Escuro */
 @media (prefers-color-scheme: dark) {
     .back-button {
         color: var(--teal);
@@ -377,7 +358,6 @@
     }
 }
 
-/* Suporte a Touch */
 @supports (scroll-snap-type: x mandatory) {
     .carousel-scroll {
         scroll-snap-type: x mandatory;
@@ -389,17 +369,12 @@
     }
 }
 
-/* Acessibilidade - Reduzir Movimento */
 @media (prefers-reduced-motion: reduce) {
     .carousel-scroll {
         scroll-behavior: auto;
     }
 
-    .carousel-item,
-    .item-card,
-    .color-dot,
-    .back-button {
-        animation: none !important;
-        transition: none !important;
+    .carousel-item {
+        animation: none;
     }
 }
