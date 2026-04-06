@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sono</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/sono.css" />
+</head>
+<body>
+    <div class="app">
+
+        <header class="app-header">
+            <a href="resumo.html" class="btn-icon btn-back" aria-label="Voltar">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"/>
+                </svg>
+            </a>
+            <h1>Sono</h1>
+            <span class="header-spacer" aria-hidden="true"></span>
+        </header>
+
+        <main class="scroll-content">
+
+            <section class="section quality-section" aria-labelledby="quality-heading">
+                <h2 class="quality-heading" id="quality-heading">Qualidade de Sono</h2>
+                <span class="quality-badge" aria-label="Qualidade de Sono: Moderado">Moderado</span>
+            </section>
+
+            <section class="section history-section" aria-labelledby="history-heading">
+                <h2 class="history-heading" id="history-heading">Últimos 12 Meses</h2>
+
+                <div class="sleep-row">
+                    <div class="sleep-row-label">
+                        <span class="sleep-icon" aria-hidden="true">🛏️</span>
+                        <span class="sleep-row-title">Sono</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </div>
+
+                <div class="sleep-time-block">
+                    <span class="sleep-time-label">Tempo Dormindo</span>
+                    <div class="sleep-time-value" aria-label="7 horas e 25 minutos">
+                        <strong>7</strong><span class="sleep-unit">h</span>
+                        <strong>25</strong><span class="sleep-unit">min</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section article-section" aria-labelledby="article-heading">
+                <article class="sleep-article">
+                    <div class="article-img-wrap" aria-hidden="true">
+                        <div class="cloud-art">
+                            <div class="cloud"></div>
+                            <span class="zzz">z z z</span>
+                        </div>
+                    </div>
+                    <div class="article-body">
+                        <h3 class="article-title" id="article-heading">
+                            Avalie se você está dormindo bem
+                        </h3>
+                        <p class="article-desc">
+                            Como dormir o necessário e por que isso é importante
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+            <nav class="bottom-nav">
+                    <a href="../index.html" class="nav-item" aria-label="Início">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        <polyline points="9 21 9 12 15 12 15 21" />
+                    </svg>
+                    Início
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12s4.03 9 9 9" />
+                        <path d="M12 8v4l3 3" />
+                        <path d="M18 18l3 3m0-3l-3 3" />
+                    </svg>
+                    Resumo
+                </a>
+                <a href="./avatar.html" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg>
+                    Avatar
+                </a>
+                <a href="./loja.html" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                        <line x1="12" y1="12" x2="12" y2="16" />
+                        <line x1="10" y1="14" x2="14" y2="14" />
+                    </svg>
+                    Loja
+                </a>
+            </nav>
+        </footer>
+
+    </div>
+</body>
+</html>

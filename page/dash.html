@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resumo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/dash.css" />
+</head>
+<body>
+<div class="app">
+
+    <header class="app-header">
+        <button class="btn-icon btn-back" aria-label="Voltar" onclick="history.back()">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+        <h1>Resumo</h1>
+        <span class="header-spacer" aria-hidden="true"></span>
+    </header>
+
+    <main class="scroll-content">
+
+        <section class="section tabs-section" aria-label="Período">
+            <nav class="period-tabs" role="tablist">
+                <button class="tab-pill active" role="tab" aria-selected="true">Hoje</button>
+                <button class="tab-pill" role="tab" aria-selected="false">Semana</button>
+                <button class="tab-pill" role="tab" aria-selected="false">Mês</button>
+                <button class="tab-pill" role="tab" aria-selected="false">Ano</button>
+            </nav>
+        </section>
+
+        <section class="section rings-section" aria-label="Gráfico de atividades do dia">
+            <div class="rings-wrapper">
+                <svg class="rings-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+                    <circle cx="110" cy="110" r="98" fill="none" stroke="#e8f8ef" stroke-width="16"/>
+                    <circle cx="110" cy="110" r="98" fill="none" stroke="#1a7a4a" stroke-width="16"
+                            stroke-dasharray="490 615" stroke-dashoffset="154" stroke-linecap="round"/>
+
+                    <circle cx="110" cy="110" r="76" fill="none" stroke="#e8f8ef" stroke-width="16"/>
+                    <circle cx="110" cy="110" r="76" fill="none" stroke="#2db56e" stroke-width="16"
+                            stroke-dasharray="360 477" stroke-dashoffset="119" stroke-linecap="round"/>
+
+                    <circle cx="110" cy="110" r="54" fill="none" stroke="#e8f8ef" stroke-width="16"/>
+                    <circle cx="110" cy="110" r="54" fill="none" stroke="#4dd4ac" stroke-width="16"
+                            stroke-dasharray="255 339" stroke-dashoffset="85" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="section stats-section" aria-label="Estatísticas do dia">
+
+            <a href="sono.html" class="stat-row" aria-label="Sono hoje: 5 horas">
+                <div class="stat-row-text">
+                    <span class="stat-label">Sono</span>
+                    <span class="stat-sublabel">hoje</span>
+                    <strong class="stat-value">5 horas</strong>
+                </div>
+                <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"/>
+                </svg>
+            </a>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <div class="stat-row-double">
+                <a href="passo-distancia.html" class="stat-row stat-row-half" aria-label="Passos hoje: 156">
+                    <div class="stat-row-text">
+                        <span class="stat-label">Passos</span>
+                        <span class="stat-sublabel">hoje</span>
+                        <strong class="stat-value">156</strong>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </a>
+                <div class="stat-divider-v" aria-hidden="true"></div>
+                <a href="passo-distancia.html" class="stat-row stat-row-half" aria-label="Distância hoje: 1.2km">
+                    <div class="stat-row-text">
+                        <span class="stat-label">Distancia</span>
+                        <span class="stat-sublabel">hoje</span>
+                        <strong class="stat-value">1.2 km</strong>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="divider" aria-hidden="true"></div>
+
+            <a href="exercicio.html" class="stat-row" aria-label="Exercício hoje: Treino Tradicional 200CAL">
+                <div class="stat-row-text">
+                    <div class="stat-label-row">
+                        <span class="stat-label">Exercício</span>
+                        <span class="stat-label-dot" aria-hidden="true">·</span>
+                        <span class="stat-sublabel-inline">Treino Tradicional</span>
+                    </div>
+                    <span class="stat-sublabel">hoje</span>
+                    <div class="stat-value-row">
+                        <span class="stat-icon-cal" aria-hidden="true">🔥</span>
+                        <strong class="stat-value stat-value-cal">200CAL</strong>
+                    </div>
+                </div>
+                <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"/>
+                </svg>
+            </a>
+
+        </section>
+    </main>
+
+        <footer>
+            <nav class="bottom-nav">
+                <a href="../index.html" class="nav-item" aria-label="Início">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        <polyline points="9 21 9 12 15 12 15 21" />
+                    </svg>
+                    Início
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12c0-4.97-4.03-9-9-9S3 7.03 3 12s4.03 9 9 9" />
+                        <path d="M12 8v4l3 3" />
+                        <path d="M18 18l3 3m0-3l-3 3" />
+                    </svg>
+                    Resumo
+                </a>
+                <a href="./avatar.html" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg>
+                    Avatar
+                </a>
+                <a href="./loja.html" class="nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                        <line x1="12" y1="12" x2="12" y2="16" />
+                        <line x1="10" y1="14" x2="14" y2="14" />
+                    </svg>
+                    Loja
+                </a>
+            </nav>
+        </footer>
+
+</div>
+
+</body>
+</html>
